@@ -1,0 +1,74 @@
+.inventory-management {
+    padding: 20px;
+  }
+  
+  .vendor-info {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .vendor-image {
+    height: 180px;
+    width: 180px;
+    margin-left: 20%;
+    margin-top: 8%;
+    border-radius: 50%;
+  }
+  
+  .phone-icon {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    /* background-color: #E6ECF2; */
+  }
+  
+  .product-form {
+    width: 400px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chunk-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #E6ECF2; */
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .product-card {
+    width: 18rem;
+    display: inline-flex;
+    height: 370px;
+    margin: 16px;
+    box-shadow: 1px 1px 9px 7px #e2dfde;
+    border: none;
+  }
+  
+  .product-image {
+    height: 150px;
+    width: 150px;
+    margin-left: 20%;
+    margin-top: 8%;
+    border-radius: 50%;
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
