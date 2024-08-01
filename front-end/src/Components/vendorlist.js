@@ -23,7 +23,7 @@ const VendorList = () => {
   const chunks = chunkArray(vendors, 3);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/getvendors")
+    axios.get("https://multi-vender-okyf.onrender.com/api/getvendors")
       .then((res) => {
         const vendorUsers = res.data.users.filter(user => user.role === "vendor");
         setVendors(vendorUsers);
@@ -34,7 +34,7 @@ const VendorList = () => {
   }, []);
 
   const handleDelete = (vendorId) => {
-    axios.delete(`http://localhost:8080/api/getvendors/${vendorId}`)
+    axios.delete(`https://multi-vender-okyf.onrender.com/api/getvendors/${vendorId}`)
       .then((res) => {
         setVendors(prevVendors => prevVendors.filter(vendor => vendor._id !== vendorId));
         setShowModal(false);

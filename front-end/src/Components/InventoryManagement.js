@@ -30,7 +30,7 @@ const InventoryManagement = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:8080/api/vendor", form)
+    axios.post("https://multi-vender-okyf.onrender.com/api/vendor", form)
       .then((res) => {
         console.log(res);
         alert("product added successfully")
@@ -67,7 +67,7 @@ const InventoryManagement = () => {
   const chunks = chunkArray(items, 4);
 
   const fetchItems = () => {
-    axios.get(`http://localhost:8080/api/getvendors/${vendorId}`)
+    axios.get(`https://multi-vender-okyf.onrender.com/api/getvendors/${vendorId}`)
       .then((res) => {
         setVendors(res.data.users);
       })
@@ -75,7 +75,7 @@ const InventoryManagement = () => {
         console.log(err);
       });
 
-    axios.get(`http://localhost:8080/api/getvendorproducts`)
+    axios.get(`https://multi-vender-okyf.onrender.com/api/getvendorproducts`)
       .then((res) => {
         const vendorUsers = res.data.user.filter(user => user.vendorName === vendorId );
         setItems(vendorUsers);
@@ -94,7 +94,7 @@ const InventoryManagement = () => {
   };
 
   const handleDelete = (productId) => {
-    axios.delete(`http://localhost:8080/api/getvendorproducts/${productId}`)
+    axios.delete(`https://multi-vender-okyf.onrender.com/api/getvendorproducts/${productId}`)
       .then((res) => {
         console.log(res);
         // Refresh items after deletion

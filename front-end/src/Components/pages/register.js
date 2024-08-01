@@ -18,7 +18,7 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:8080/api/register", form)
+    axios.post("https://multi-vender-okyf.onrender.com/api/register", form)
       .then((res) => {
         console.log(res);
         if(res.data.status==="success"){

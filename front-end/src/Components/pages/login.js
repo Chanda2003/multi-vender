@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:8080/api/login", form)
+    axios.post("https://multi-vender-okyf.onrender.com/api/login", form)
       .then((res) => {
         const { role, _id } = res.data.data;
         if (role === "vendor") {
